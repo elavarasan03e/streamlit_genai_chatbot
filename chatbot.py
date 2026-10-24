@@ -7,7 +7,7 @@ import os
 load_dotenv(r"C:\Users\004KXR744\llm_learning\.env")
 
 #GROQ_API_KEY=os.getenv("MY_API_KEY")
-os.environ["GROQ_API_KEY"]="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"
+os.environ["GROQ_API_KEY"]=st.secrets["GROQ_API_KEY"]
 
 st.set_page_config(
     page_title="Chatbot", 
