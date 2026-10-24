@@ -6,8 +6,8 @@ import os
 
 load_dotenv(r"C:\Users\004KXR744\llm_learning\.env")
 
-GROQ_API_KEY=os.getenv("MY_API_KEY")
-os.environ["GROQ_API_KEY"]=GROQ_API_KEY
+#GROQ_API_KEY=os.getenv("MY_API_KEY")
+os.environ["GROQ_API_KEY"]="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"
 
 st.set_page_config(
     page_title="Chatbot", 
@@ -31,7 +31,7 @@ for message in st.session_state.chat_history:
 
 #initiating the language model
 llm = ChatGroq(
-    model=os.getenv("GROQ_MODEL"),
+    model="openai/gpt-oss-20b",
     temperature=0.5
 )
 
